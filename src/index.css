@@ -2,41 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Agricure Design System - Agricultural focused colors and design tokens
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
+    /* Agricultural color palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 142 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 142 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 142 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary green - representing healthy crops */
+    --primary: 132 45% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 132 45% 45%;
+    --primary-dark: 132 45% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary earth tones */
+    --secondary: 35 25% 85%;
+    --secondary-foreground: 142 20% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 15% 92%;
+    --muted-foreground: 142 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 85% 55%;
+    --accent-foreground: 142 20% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors for disease diagnosis */
+    --success: 132 45% 35%;
+    --success-foreground: 0 0% 98%;
+    
+    --warning: 42 95% 55%;
+    --warning-foreground: 142 20% 15%;
+    
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --info: 200 85% 55%;
+    --info-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 15% 88%;
+    --input: 35 15% 94%;
+    --ring: 132 45% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Agricultural gradients */
+    --gradient-healthy: linear-gradient(135deg, hsl(132 55% 45%), hsl(132 45% 35%));
+    --gradient-warning: linear-gradient(135deg, hsl(42 95% 65%), hsl(42 95% 55%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 75% 70%), hsl(0 75% 60%));
+    --gradient-earth: linear-gradient(135deg, hsl(35 35% 85%), hsl(35 25% 75%));
+
+    /* Shadows with earth tones */
+    --shadow-soft: 0 2px 8px -2px hsl(35 15% 75% / 0.3);
+    --shadow-medium: 0 4px 16px -4px hsl(35 15% 65% / 0.4);
+    --shadow-strong: 0 8px 32px -8px hsl(35 15% 55% / 0.5);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 0 0% 98%;
 
